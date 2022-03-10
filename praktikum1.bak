@@ -1,0 +1,23 @@
+uses crt;
+var
+	pbalok, lbalok, tbalok, jari : real;
+	volumebalok, luasbalok :real;
+const
+	pi = 3.14;
+begin
+	clrscr();
+	writeln('BANGUN RUANG');
+	writeln('Nama : Fikri mulyana Setiawan');
+	writeln('No.BP : 2110432032');
+	writeln('1. Balok');
+	write('panjang balok : ');
+	readln(pbalok);
+	write('lebar balok : ');
+	readln(lbalok);
+	write('tinggi balok : ');
+	readln(tbalok);
+	luasbalok := 2*(pbalok*lbalok+pbalok*tbalok+lbalok*tbalok);
+	volumebalok := pbalok*lbalok*tbalok;
+	writeln('luas balok = ', luasbalok);
+	writeln('volume balok = ', volumebalok);
+end.
